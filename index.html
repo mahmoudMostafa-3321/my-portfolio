@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Mustafa Fotoh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <h3>Mahmoud</h3>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container" data-aos="fade-down">
+            <h1><span id="typed"></span></h1>
+            <p>Hello, I am Mahmoud Mustafa Fotoh. I specialize in building web applications with HTML, CSS, JavaScript, Python, C#, and Bootstrap. I also have expertise in databases like MongoDB and full-stack development.</p>
+            <a href="cv.pdf" download class="btn">Download CV</a>
+        </div>
+    </header>
+
+    <section class="about" id="about" data-aos="fade-up">
+        <div class="container">
+            <img src="images/my photo.jpg" alt="My Personal Photo" class="profile-pic">
+            <h2>About Me</h2>
+            <p>I'm Mahmoud Mustafa Fotoh, a passionate web developer with expertise in front-end and back-end technologies. I love building clean, efficient, and user-friendly applications.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills" data-aos="fade-right">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <span><i class="fab fa-html5"></i> HTML5, CSS3, JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="fab fa-python"></i> Python, C#, Bootstrap</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="fas fa-database"></i> MongoDB, Mongoose</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="fas fa-server"></i> Full Backend Development</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects" data-aos="zoom-in">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="backend">Back-end</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass tilt" data-category="frontend">
+                    <h3>Landing Page</h3>
+                    <p>Simple landing page with HTML, CSS, JS.</p>
+                </div>
+                <div class="project-card glass tilt" data-category="frontend">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio built with modern technologies.</p>
+                </div>
+                <div class="project-card glass tilt" data-category="backend">
+                    <h3>Todo App</h3>
+                    <p>Basic Todo application using JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificates" data-aos="flip-up">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card glass tilt">
+                    <h3>HTML & CSS Certificate</h3>
+                    <p>Completed a full course from [udemy]</p>
+                </div>
+                <div class="certificate-card glass tilt">
+                    <h3>JavaScript Mastery</h3>
+                    <p>Advanced JavaScript projects from udemy and google search</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact" data-aos="fade-left">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm" class="glass">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <p>© 2025 Mahmoud Mustafa Fotoh | All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/mahmoudMostafa-3321" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mahmoud-mostafa-a671b415a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/CORLIONE22" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Dark/Light Mode Toggle -->
+    <button id="themeToggle" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+</body>
+</html>
